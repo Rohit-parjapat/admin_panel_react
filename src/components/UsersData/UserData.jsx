@@ -5,10 +5,10 @@ import { FiEdit } from "react-icons/fi";
 export const UserData = ({ users, deleteUser, editUserDetails }) => {
   return users.map((user) => (
     <tr key={user.id}>
-      <td className="px-5">{user.id}</td>
-      <td className="px-5">{user.name}</td>
-      <td className="px-5">{user.email}</td>
-      <td className="px-5">{user.phone}</td>
+      <td>{user.id}</td>
+      <td>{user.name}</td>
+      <td>{user.email}</td>
+      <td>{user.phone}</td>
 
       <td
         className="px-1 "

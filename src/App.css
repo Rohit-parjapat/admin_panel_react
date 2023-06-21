@@ -16,3 +16,45 @@
   background: white;
   width: 100%;
 }
+
+@media (max-width: 500px) {
+  td,
+  th {
+    font-size: 0.7rem;
+  }
+  div.table-responsive {
+    padding: 1rem 0.3rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  div.table-responsive {
+    padding: 2rem 0.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 964px) {
+  td,
+  th {
+    font-size: 1rem;
+  }
+  div.table-responsive {
+    padding: 2rem 0.6rem;
+  }
+}
+@media (min-width: 964px) and (max-width: 1200px) {
+  td,
+  th {
+    font-size: 1.1rem;
+  }
+  div.table-responsive {
+    padding: 2rem 1.7rem;
+  }
+}
+@media (min-width: 1200px) {
+  td,
+  th {
+    font-size: 1.2rem;
+  }
+  div.table-responsive {
+    padding: 2rem 2rem;
+  }
+}

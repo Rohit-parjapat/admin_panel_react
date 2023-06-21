@@ -107,6 +107,17 @@ const Users = () => {
     setEditUser(id);
   };
 
+  const reset = () => {
+    setToggleSubmit(false);
+    setEditUser(null);
+
+    // ***** Making form fields empty *****
+    setId("");
+    setName("");
+    setEmail("");
+    setPhone("");
+  };
+
   //saving data to local storage
 
   useEffect(() => {
@@ -140,6 +151,7 @@ const Users = () => {
                 className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
+                onClick={reset}
               ></button>
             </div>
             <div className="modal-body">
@@ -186,6 +198,7 @@ const Users = () => {
                     type="button"
                     className="btn btn-secondary"
                     data-bs-dismiss="modal"
+                    onClick={reset}
                   >
                     Cancel
                   </button>
@@ -193,7 +206,7 @@ const Users = () => {
                     <button
                       type="submit"
                       className="btn btn-primary"
-                      data-bs-dismiss="modal"
+                      // data-bs-dismiss="modal"
                     >
                       Update
                     </button>
@@ -201,7 +214,7 @@ const Users = () => {
                     <button
                       type="submit"
                       className="btn btn-primary"
-                      data-bs-dismiss="modal"
+                      // data-bs-dismiss="modal"
                       onClick={() => {
                         setId(Math.floor(Math.random() * 100000 + 1));
                       }}
@@ -216,15 +229,15 @@ const Users = () => {
         </div>
       </div>
       <div className="d-flex flex-column vh-100">
-        <div className="table-responsive w-80 px-5 pt-5 pb-3">
+        <div className="table-responsive">
           <table className="table table-striped">
             <thead>
-              <tr className=" fs-5">
-                <th className="text-primary px-5">Id</th>
-                <th className="text-primary px-5">Name</th>
-                <th className="text-primary px-5">Email</th>
-                <th className="text-primary px-5">Phone Number</th>
-                <th colSpan={2} className="px-5 text-primary">
+              <tr>
+                <th className="text-primary ">Id</th>
+                <th className="text-primary ">Name</th>
+                <th className="text-primary ">Email</th>
+                <th className="text-primary ">Phone Number</th>
+                <th colSpan={2} className=" text-primary">
                   Actions
                 </th>
               </tr>
