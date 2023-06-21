@@ -229,6 +229,9 @@ const Users = () => {
         </div>
       </div>
       <div className="d-flex flex-column vh-100">
+        <div className=" text-center text-success fs-2 fw-bold py-4">
+          <span>Users Record</span>
+        </div>
         <div className="table-responsive">
           <table className="table table-striped">
             <thead>

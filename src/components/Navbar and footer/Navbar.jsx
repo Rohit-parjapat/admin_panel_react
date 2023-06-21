@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary px-4">
         <div className="add_new_user_btn d-md-none">
           <button
-            className="bg-primary px-3 py-1 rounded text-white fw-bold border-0"
+            className="bg-primary px-3 py-2 rounded text-white fw-bold border-0"
             data-bs-toggle="modal"
             data-bs-target="#addNewUser"
           >
@@ -47,7 +47,7 @@ const Navbar = () => {
               </li>
             </ul>
             <button
-              className="bg-primary px-3 py-2 rounded text-white fw-bold border-0"
+              className="bg-primary px-3 py-2 rounded text-white fw-bold border-0 d-md-block d-none"
               data-bs-toggle="modal"
               data-bs-target="#addNewUser"
             >
