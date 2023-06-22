@@ -258,9 +258,9 @@ const Users = () => {
           </table>
         </div>
         {users.length < 1 && (
-          <div className="text-center text-danger fs-4 fw-bold">
+          <div className="text-center text-danger  fw-bold">
             <button
-              className="bg-info px-3 py-2 rounded text-white fw-bold border-0"
+              className="bg-info px-3 py-2 rounded text-white fw-bold border-0 fs-5"
               data-bs-toggle="modal"
               data-bs-target="#addNewUser"
             >
