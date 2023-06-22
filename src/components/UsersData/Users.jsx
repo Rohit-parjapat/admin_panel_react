@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { UserData } from "./UserData";
+import { AiOutlinePlus } from "react-icons/ai";
 
 // ***** Getting Data From the Local Storage *****
 const getDataFromLocalStorage = () => {
@@ -257,8 +258,15 @@ const Users = () => {
           </table>
         </div>
         {users.length < 1 && (
-          <div className="text-center text-danger fs-2 fw-bold">
-            No User added yet !
+          <div className="text-center text-danger fs-4 fw-bold">
+            <button
+              className="bg-info px-3 py-2 rounded text-white fw-bold border-0"
+              data-bs-toggle="modal"
+              data-bs-target="#addNewUser"
+            >
+              <AiOutlinePlus />
+              Add New User
+            </button>
           </div>
         )}
       </div>
